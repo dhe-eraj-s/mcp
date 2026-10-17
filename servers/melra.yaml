@@ -25,8 +25,11 @@ tags:
   - recovery
   - workflows
   - local-first
+  - ai-agents
+  - mcp-security
+  - durable-execution
 created_at: "2026-10-16T09:41:46.000Z"
-updated_at: "2026-10-16T09:41:46.000Z"
+updated_at: "2026-10-17T03:16:11.000Z"
 install:
   npm: "@melra/cli"
   command: npx
@@ -34,5 +37,28 @@ install:
     - "-y"
     - "@melra/cli@alpha"
     - serve
+tools:
+  - name: melra_capabilities
+    description: Discover available local execution capabilities, policy defaults, and runtime limits.
+  - name: melra_plan
+    description: Persist a bounded task and evaluate policy without executing it; return any scoped approval challenge.
+  - name: melra_execute
+    description: Execute a planned task through policy recheck, scoped approval, runtime execution, verification, and receipt generation.
+  - name: melra_task_status
+    description: Read the durable state of a task.
+  - name: melra_task_cancel
+    description: Cooperatively cancel a running or pending task.
+  - name: melra_receipt
+    description: Retrieve action receipts and the execution certificate.
+  - name: melra_workflow_plan
+    description: Validate, preflight, encrypt, and persist a bounded workflow without executing it.
+  - name: melra_workflow_advance
+    description: Execute one ready workflow scheduling wave through governed MELRA tasks.
+  - name: melra_workflow_status
+    description: Read the durable workflow projection.
+  - name: melra_workflow_cancel
+    description: Cooperatively cancel nonterminal workflow nodes and their tasks.
+  - name: melra_workflow_control
+    description: Pause, resume, or suspend a workflow without losing node state.
 license: Apache-2.0
 version: "0.3.0-alpha.14"
