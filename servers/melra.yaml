@@ -6,7 +6,7 @@ description: >
   approvals, verifies declared outcomes, and records redacted durable receipts
   for recovery after interrupted calls. It exposes task and workflow tools over
   stdio and Streamable HTTP, with Unix-domain socket support on supported
-  platforms. MELRA is alpha software and requires Node.js 22 or newer.
+  platforms. MELRA is alpha software and requires Node.js 22.13+ or 23.4+.
 author:
   name: XAGI Labs
   github: XAGI-Lab
@@ -29,7 +29,7 @@ tags:
   - mcp-security
   - durable-execution
 created_at: "2026-10-16T09:41:46.000Z"
-updated_at: "2026-10-17T03:16:11.000Z"
+updated_at: "2026-10-20T17:40:56.000Z"
 install:
   npm: "@melra/cli"
   command: npx
